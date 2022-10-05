@@ -1,6 +1,6 @@
 /**********************************************************************/
 /*  PROYECTO FIGURAS              */
-/*  EQUIPO XXXX                 */
+/*  EQUIPO SUECIA                 */
 
 * {
   box-sizing: border-box;
@@ -22,7 +22,7 @@
   --fuente-secuendaria: sans-serif;
 
   /* Color y tamaño de las figuras */
-  --color-figuras: hsl(0, 0%, 0%);
+  --color-figuras: rgb(48, 130, 48);
   --longitud-muestra: 100px;
 }
 
@@ -67,6 +67,13 @@
   /* ======= COMPLETAR REGLA ====== */
   /* El panel del patrón se muestra centrado dentro del panel */
   /* Su dimensión admite albergar la figura patrón de forma holgada */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  border: 5px dashed;
+  width: clamp(100px, 60%, 120px);
 }
 
 /**********************************************************************/
@@ -77,6 +84,7 @@
 
   /* ======= COMPLETAR REGLA ====== */
   /* Las figuras del panel se muestran centradas */
+  text-align: center;
 }
 
 /**********************************************************************/
@@ -88,12 +96,18 @@
   /* ACLARACIONES:
        - Las figuras son definidas en HTML mediante elementos span
        - La dimensión se define en base a --logitud-muestra  */
+  width: var(--longitud-muestra);
+  height: var(--longitud-muestra);
+  text-align: center;
+  display: inline-block;
+  margin: 5%;
 }
 
 .panel__patron .figura {
   /* La figura del patrón se muestra ligeramente transparente 
      para destacarla respecto de las del panel de alternativas */
   opacity: 50%;
+  
 }
 
 /**********************************************************************/
@@ -102,10 +116,12 @@
 
 .figura--sobrevolando {
   /* ======= COMPLETAR REGLA ====== */
+  color: rgb(14, 64, 173);
 }
 
 .figura--arrastrando {
   /* ======= COMPLETAR REGLA ====== */
+  opacity: 40%;
 }
 
 /**********************************************************************/

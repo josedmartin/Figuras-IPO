@@ -5,7 +5,7 @@
 // El nombre será mostrada en el elemento HTML #equipo de la página web
 // Cada equipo debe actualizar la constante con su nombre de equipo
 
-const nombreDelEquipoDeLaboratorio = "XXXX";
+const nombreDelEquipoDeLaboratorio = "Suecia";
 document.getElementById("equipo").innerHTML = nombreDelEquipoDeLaboratorio;
 
 // -------------------------------------------------------
@@ -103,11 +103,14 @@ function ___dragEnd(e) {
   // si se hubiera cancelado la operación.
   // Esta función elimina de la figura el estilo de clase figura--arrastrando
   // con el objetivo de que su aspecto vuelva a ser el original
+  e.target.classList.remove("figura--arrastrando");
+
 }
 
 function ___dragEnter(e) {
   // Esta función se limita a hacer notar que la figura arrastrada entra en la zona del patrón
   // El efecto visual se consigue añadiendo al panelPatrón el estilo de clase figura--sobrevolando
+  panelPatron.classList.add("figura--sobrevolando");
 }
 
 function dragOver(e) {
@@ -144,7 +147,7 @@ function drop(e) {
 
   if (figuraSoltada == figuraDelPatron) {
     // Si ambas figuras coinciden, se ilustra la coincidencia:
-
+    panelPatron.classList.add("figura--sobrevolando");
     // (1) se detiene el proceso de arrastre (las figuras dejan de ser arrastrables)
     figuras.forEach((figura) => {
       figura.draggable = false;
