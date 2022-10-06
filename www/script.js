@@ -104,13 +104,12 @@ function ___dragEnd(e) {
   // Esta función elimina de la figura el estilo de clase figura--arrastrando
   // con el objetivo de que su aspecto vuelva a ser el original
   e.target.classList.remove("figura--arrastrando");
-
 }
 
 function ___dragEnter(e) {
   // Esta función se limita a hacer notar que la figura arrastrada entra en la zona del patrón
   // El efecto visual se consigue añadiendo al panelPatrón el estilo de clase figura--sobrevolando
-  panelPatron.classList.add("figura--sobrevolando");
+  e.target.classList.add("figura--sobrevolando");
 }
 
 function dragOver(e) {
@@ -175,6 +174,7 @@ function ___modificaAspectoDelPatron(panelPatron) {
   //   usar un borde discontinuo con un color llamativo
   //   alterar el color de fondo del patrón
   //   añadir una sombra al patrón
+  panelPatron.classList.add("panel__patron");
 }
 
 //  Devuelve un elemento aerbitraio del array

@@ -62,7 +62,6 @@
 .panel__patron {
   /* El estilo del borde cambiará dinámicamente con JS 
      para ilustrar cuando una figura entra en el panel del patrón  */
-  border: 1px solid var(--color-primario);
 
   /* ======= COMPLETAR REGLA ====== */
   /* El panel del patrón se muestra centrado dentro del panel */
@@ -72,7 +71,7 @@
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;
-  border: 5px dashed;
+  border: 3.5px dashed;
   width: clamp(100px, 60%, 120px);
 }
 
@@ -116,7 +115,7 @@
 
 .figura--sobrevolando {
   /* ======= COMPLETAR REGLA ====== */
-  color: rgb(14, 64, 173);
+  color: rgb(48, 130, 48);
 }
 
 .figura--arrastrando {
