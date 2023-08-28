@@ -174,7 +174,7 @@ function ___modificaAspectoDelPatron(panelPatron) {
   //   usar un borde discontinuo con un color llamativo
   //   alterar el color de fondo del patrón
   //   añadir una sombra al patrón
-  panelPatron.classList.add("panel__patron");
+  panelPatron.target.classList.add("selector");
 }
 
 //  Devuelve un elemento aerbitraio del array

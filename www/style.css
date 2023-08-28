@@ -22,7 +22,9 @@
   --fuente-secuendaria: sans-serif;
 
   /* Color y tamaño de las figuras */
-  --color-figuras: rgb(48, 130, 48);
+  --color-circulo: hsl(210, 89%, 28%);
+  --color-triangulo: hsl(51, 67%, 55%);
+  --color-hoja: hsl(210, 89%, 28%);
   --longitud-muestra: 100px;
 }
 
@@ -128,7 +130,7 @@
 
 .circulo {
   border-radius: 50%;
-  background-color: var(--color-figuras);
+  background-color: var(--color-circulo);
 }
 
 .triangulo {
@@ -136,10 +138,10 @@
 
   border-left: var(--mitad) solid transparent;
   border-right: var(--mitad) solid transparent;
-  border-bottom: var(--longitud-muestra) solid var(--color-figuras);
+  border-bottom: var(--longitud-muestra) solid var(--color-triangulo);
 }
 
 .hoja {
-  background-color: var(--color-figuras);
+  background-color: var(--color-hoja);
   border-radius: 0% 75%;
 }
